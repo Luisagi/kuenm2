@@ -389,20 +389,14 @@ contribution of each variable. If multiple models are included in the
 distinct model.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">imp</span></span>
-<span><span class="co">#&gt;      predictor contribution    Models</span></span>
-<span><span class="co">#&gt; 1   I(bio_1^2)  0.330546900 Model_192</span></span>
-<span><span class="co">#&gt; 2        bio_1  0.295001412 Model_192</span></span>
-<span><span class="co">#&gt; 3       bio_15  0.209668355 Model_192</span></span>
-<span><span class="co">#&gt; 4  I(bio_15^2)  0.156926301 Model_192</span></span>
-<span><span class="co">#&gt; 5   I(bio_7^2)  0.006279520 Model_192</span></span>
-<span><span class="co">#&gt; 6        bio_7  0.001577512 Model_192</span></span>
-<span><span class="co">#&gt; 7   I(bio_1^2)  0.368476226 Model_219</span></span>
-<span><span class="co">#&gt; 8        bio_1  0.332782286 Model_219</span></span>
-<span><span class="co">#&gt; 9       bio_15  0.155708606 Model_219</span></span>
-<span><span class="co">#&gt; 10 I(bio_15^2)  0.095186390 Model_219</span></span>
-<span><span class="co">#&gt; 11 I(bio_12^2)  0.022722557 Model_219</span></span>
-<span><span class="co">#&gt; 12      bio_12  0.021793617 Model_219</span></span>
-<span><span class="co">#&gt; 13  I(bio_7^2)  0.003330318 Model_219</span></span></code></pre></div>
+<span><span class="co">#&gt;   predictor contribution    Models</span></span>
+<span><span class="co">#&gt; 1     bio_1  0.567815429 Model_192</span></span>
+<span><span class="co">#&gt; 2    bio_15  0.219231619 Model_192</span></span>
+<span><span class="co">#&gt; 3     bio_7  0.212952953 Model_192</span></span>
+<span><span class="co">#&gt; 4     bio_1  0.721574882 Model_219</span></span>
+<span><span class="co">#&gt; 5    bio_15  0.248819713 Model_219</span></span>
+<span><span class="co">#&gt; 6    bio_12  0.025950948 Model_219</span></span>
+<span><span class="co">#&gt; 7     bio_7  0.003654457 Model_219</span></span></code></pre></div>
 <p>We can visualize variable importance using the
 <code><a href="../reference/plot_importance.html">plot_importance()</a></code> function. When the
 <code>fitted_models</code> object contains more than one selected model,
