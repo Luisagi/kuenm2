@@ -444,7 +444,7 @@ organize_for_projection(output_dir = out_dir,
                         overwrite = TRUE)
 #> 
 #> Variables successfully organized in directory:
-#> /tmp/RtmpGqjp2R/Projection_variables
+#> /tmp/RtmpTh2Z1F/Projection_variables
 ```
 
 We can check the files structured hierarchically in nested folders using

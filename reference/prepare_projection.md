@@ -155,7 +155,7 @@ organize_future_worldclim(input_dir = in_dir,
 #>   |                                                                              |                                                                      |   0%  |                                                                              |=========                                                             |  12%  |                                                                              |==================                                                    |  25%  |                                                                              |==========================                                            |  38%  |                                                                              |===================================                                   |  50%  |                                                                              |============================================                          |  62%  |                                                                              |====================================================                  |  75%  |                                                                              |=============================================================         |  88%  |                                                                              |======================================================================| 100%
 #> 
 #> Variables successfully organized in directory:
-#> /tmp/Rtmp61JqCm/Future_raw
+#> /tmp/RtmpKVZX9J/Future_raw
 
 # Prepare projections using fitted models to check variables
 pr <- prepare_projection(models = fitted_model_maxnet,
@@ -179,7 +179,7 @@ pr
 #>   - Scenarios: ssp126 | ssp585 
 #>   - GCMs: ACCESS-CM2 | MIROC6 
 #> All variables are located in the following root directory:
-#> /tmp/Rtmp61JqCm
+#> /tmp/RtmpKVZX9J
 
 # Prepare projections using variables names
 pr_b <- prepare_projection(models = NULL,
@@ -204,5 +204,5 @@ pr_b
 #>   - Scenarios: ssp126 | ssp585 
 #>   - GCMs: ACCESS-CM2 | MIROC6 
 #> All variables are located in the following root directory:
-#> /tmp/Rtmp61JqCm
+#> /tmp/RtmpKVZX9J
 ```
