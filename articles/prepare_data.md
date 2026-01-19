@@ -293,7 +293,7 @@ d_glm
 #>   - Presence: 51 
 #>   - Background: 292 
 #> Partition Method: subsample 
-#>   - Number of replicates: 
+#>   - Number of partitions: 10 
 #>   - Train proportion: 0.7 
 #> Continuous Variables:
 #>   - bio_1, bio_7, bio_12, bio_15 
@@ -365,7 +365,7 @@ data_user
 #>   - Presence: 51 
 #>   - Background: 476 
 #> Partition Method: bootstrap 
-#>   - Number of replicates: 
+#>   - Number of partitions: 4 
 #>   - Train proportion: 0.7 
 #> Continuous Variables:
 #>   - bio_1, bio_7, bio_12, bio_15 
@@ -773,10 +773,10 @@ terra::plot(geo_dist_bias_inv$Background, main = "Inverse Bias Effect",
 
 A common approach in ENM involves summarizing the information from a set
 of variables into a smaller set of orthogonal variables using Principal
-Component Analysis (PCA) (see [Cruz-Cardenaz et
-al. 2014](https://doi.org/10.7550/rmb.36723) for an example). `kuenm2`
-has options to perform a PCA internally or use variables that have been
-externally prepared as PCs.
+Component Analysis (PCA) (see [Trindade et
+al. 2025](https://onlinelibrary.wiley.com/doi/epdf/10.1111/jbi.70103)
+for an example). `kuenm2` has options to perform a PCA internally or use
+variables that have been externally prepared as PCs.
 
   
 
