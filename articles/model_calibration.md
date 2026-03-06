@@ -10,7 +10,7 @@
   - [GLMs](#glms)
   - [Concave curves](#concave-curves)
 - [Re-selecting models](#re-selecting-models)
-- [Training partion effects](#training-partion-effects)
+- [Training partition effects](#training-partition-effects)
 - [Saving a calibration_results
   object](#saving-a-calibration_results-object)
 
@@ -32,9 +32,9 @@ from the process.
 ## Getting ready
 
 At this point it is assumed that `kuenm2` is installed (if not, see the
-[Main guide](https://marlonecobos.github.io/kuenm2/index.md)). Load
-`kuenm2` and any other required packages, and define a working directory
-(if needed).
+[Main guide](https://marlonecobos.github.io/kuenm2/articles/index.md)).
+Load `kuenm2` and any other required packages, and define a working
+directory (if needed).
 
 Note: functions from other packages (i.e., not from base R or `kuenm2`)
 used in this guide will be displayed as `package::function()`.
@@ -518,8 +518,8 @@ new_m_maxnet$selected_models[,c("ID", "Formulas", "R_multiplier",
 #> 159 159                        ~bio_1 + bio_7 + I(bio_1^2) + I(bio_7^2) -1
 #> 189 189 ~bio_1 + bio_7 + bio_12 + I(bio_1^2) + I(bio_7^2) + I(bio_12^2) -1
 #>     R_multiplier Omission_rate_at_5.mean Mean_AUC_ratio_at_5.mean     AICc
-#> 159          0.1                  0.0192                 1.481185 622.7677
-#> 189          0.1                  0.0192                 1.510982 621.9095
+#> 159          0.1                  0.0192                 1.484699 622.7677
+#> 189          0.1                  0.0192                 1.511005 621.9095
 #>     Is_concave
 #> 159      FALSE
 #> 189      FALSE
@@ -566,8 +566,8 @@ new_summary$selected_models[, c("ID", "Formulas", "R_multiplier",
 #> 159 159                        ~bio_1 + bio_7 + I(bio_1^2) + I(bio_7^2) -1
 #> 189 189 ~bio_1 + bio_7 + bio_12 + I(bio_1^2) + I(bio_7^2) + I(bio_12^2) -1
 #>     R_multiplier Omission_rate_at_5.mean Mean_AUC_ratio_at_5.mean     AICc
-#> 159          0.1                  0.0192                 1.481864 622.7677
-#> 189          0.1                  0.0192                 1.512692 621.9095
+#> 159          0.1                  0.0192                 1.484105 622.7677
+#> 189          0.1                  0.0192                 1.512114 621.9095
 #>     Is_concave
 #> 159      FALSE
 #> 189      FALSE
@@ -575,7 +575,7 @@ new_summary$selected_models[, c("ID", "Formulas", "R_multiplier",
 
   
 
-## Training partion effects
+## Training partition effects
 
 After model calibration, selected models can be explored to understand
 the effect of leaving testing data out in every cross-validation
