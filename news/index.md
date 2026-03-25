@@ -1,5 +1,5 @@
 # Changelog
 
-## kuenm2 0.1.0
+## kuenm2 0.1.2
 
 - Initial CRAN submission.
