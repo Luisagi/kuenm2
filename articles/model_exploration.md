@@ -32,9 +32,8 @@ multiple options available to fit and explore selected models.
 ## Getting ready
 
 At this point it is assumed that `kuenm2` is installed (if not, see the
-[Main guide](https://marlonecobos.github.io/kuenm2/articles/index.md)).
-Load `kuenm2` and any other required packages, and define a working
-directory (if needed).
+[Main guide](https://marlonecobos.github.io/kuenm2/)). Load `kuenm2` and
+any other required packages, and define a working directory (if needed).
 
 Note: functions from other packages (i.e., not from base R or `kuenm2`)
 used in this guide will be displayed as `package::function()`.
@@ -672,7 +671,7 @@ str(new_occ)
 #>  $ species: chr  "Myrcia hatschbachii" "Myrcia hatschbachii" "Myrcia hatschbachii" "Myrcia hatschbachii" ...
 #>  $ x      : num  -48.3 -49.1 -49.9 -49.4 -49.9 ...
 #>  $ y      : num  -25.2 -25 -24.5 -24.5 -24.8 ...
-#>  - attr(*, ".internal.selfref")=<externalptr>
+#>  - attr(*, ".internal.selfref")=<pointer: (nil)>
 ```
 
   
