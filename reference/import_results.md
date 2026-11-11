@@ -121,7 +121,7 @@ A SpatRaster or a list of SpatRasters, structured according to the input
 ``` r
 # Load packages
 library(terra)
-#> terra 1.9.34
+#> terra 1.9.50
 # Step 1: Organize variables for current projection
 ## Import current variables (used to fit models)
 var <- terra::rast(system.file("extdata", "Current_variables.tif",
@@ -146,10 +146,28 @@ out_dir_future <- file.path(tempdir(), "Future_raw2")
 ### 'SoilType' will be appended as a static variable in each scenario
 organize_future_worldclim(input_dir = in_dir, output_dir = out_dir_future,
                           name_format = "bio_", static_variables = var$SoilType)
-#>   |                                                                              |                                                                      |   0%  |                                                                              |=========                                                             |  12%  |                                                                              |==================                                                    |  25%  |                                                                              |==========================                                            |  38%  |                                                                              |===================================                                   |  50%  |                                                                              |============================================                          |  62%  |                                                                              |====================================================                  |  75%  |                                                                              |=============================================================         |  88%  |                                                                              |======================================================================| 100%
+#> 
+  |                                                                            
+  |                                                                      |   0%
+  |                                                                            
+  |=========                                                             |  12%
+  |                                                                            
+  |==================                                                    |  25%
+  |                                                                            
+  |==========================                                            |  38%
+  |                                                                            
+  |===================================                                   |  50%
+  |                                                                            
+  |============================================                          |  62%
+  |                                                                            
+  |====================================================                  |  75%
+  |                                                                            
+  |=============================================================         |  88%
+  |                                                                            
+  |======================================================================| 100%
 #> 
 #> Variables successfully organized in directory:
-#> /tmp/RtmpXYdlrR/Future_raw2
+#> /tmp/RtmpjzqES7/Future_raw2
 
 # Step 3: Prepare data to run multiple projections
 ## An example with maxnet models
@@ -173,7 +191,19 @@ dir.create(out_dir, recursive = TRUE)
 ## Project selected models to multiple scenarios
 p <- project_selected(models = fitted_model_maxnet, projection_data = pr,
                       out_dir = out_dir)
-#>   |                                                                              |                                                                      |   0%  |                                                                              |==============                                                        |  20%  |                                                                              |============================                                          |  40%  |                                                                              |==========================================                            |  60%  |                                                                              |========================================================              |  80%  |                                                                              |======================================================================| 100%
+#> 
+  |                                                                            
+  |                                                                      |   0%
+  |                                                                            
+  |==============                                                        |  20%
+  |                                                                            
+  |============================                                          |  40%
+  |                                                                            
+  |==========================================                            |  60%
+  |                                                                            
+  |========================================================              |  80%
+  |                                                                            
+  |======================================================================| 100%
 
 # Use import_results to import results:
 raster_p <- import_results(projection = p, consensus = "mean")
